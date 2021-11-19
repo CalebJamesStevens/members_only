@@ -1,8 +1,8 @@
 <div class="post">
     <div class="header">
         <%if current_user%>
-            <h5><%=@post.user.name%></h5>
-            <h5>@<%=@post.user.handle%></h5>
+            <h5><%=post.user.name%></h5>
+            <h5>@<%=post.user.handle%></h5>
         <%else%>
             <h5>Anon</h5>
             <h5>@Anon</h5>
@@ -10,10 +10,10 @@
     </div>
     
     <div class="title">
-        <%= @post.title %>
+        <%= post.title %>
     </div>
     
     <div class="content">
-        <%= @post.content %>
+        <%= post.content %>
     </div>
 </div>
